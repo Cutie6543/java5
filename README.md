@@ -11,15 +11,12 @@ public class NumberGuessingGame {
         Scanner input = new Scanner(System.in);
         int guess;
         boolean win = false;
-
         System.out.println("Welcome to the Number Guessing Game!");
-        System.out.println("I have selected a number between 1 and 100. Can you guess it?");
-
+        System.out.println("I have selected a number between 1 and 100. Can you guess it?")
         while (!win) {
             System.out.print("Enter your guess: ");
             guess = input.nextInt();
             numberOfTries++;
-
             if (guess < 1 || guess > 100) {
                 System.out.println("Your guess is out of range. Please guess a number between 1 and 100.");
             } else if (guess < numberToGuess) {
@@ -31,7 +28,6 @@ public class NumberGuessingGame {
                 System.out.println("Congratulations! You've guessed the number in " + numberOfTries + " tries.");
             }
         }
-
-        input.close();
+       input.close();
     }
 }
