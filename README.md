@@ -1,8 +1,8 @@
 # java5
 a program in java about guessing a number 
+
 import java.util.Random;
 import java.util.Scanner;
-
 public class NumberGuessingGame {
     public static void main(String[] args) {
         Random random = new Random();
